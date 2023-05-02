@@ -1,14 +1,16 @@
 package com.mars.inscribe.inscribe.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HomeController {
+@RequestMapping("status")
+public class StatusController {
 	
-	@GetMapping("/")
+	@GetMapping("")
 	public String status() {
-		return "Hello Papa";
+		return "Server is Up and Running";
 	}
 	
 	
